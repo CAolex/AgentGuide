@@ -704,7 +704,7 @@ AgentGuide 提供 **n 个简历级实战项目**，每个项目都提供：
 - [ ] [代码解释器 (Code Interpreter)：原理与实现](./docs/02-tech-stack/12-code-interpreter.md)
 - [ ] [网络浏览 (Web Browsing)：原理与实现](./docs/02-tech-stack/13-web-browsing.md)
 
-#### 2.5 上下文工程 (Context Engineering) - 高级优化 ⭐ 重要！
+#### 2.5 上下文工程 (Context Engineering) - 高级优化 ⭐ 核心！
 - [x] [必看👍 上下文工程完全指南：6大修复技巧](./docs/02-tech-stack/14-context-engineering.md)
   - 上下文的 4 种失效模式
   - RAG：精准检索相关信息
@@ -714,6 +714,16 @@ AgentGuide 提供 **n 个简历级实战项目**，每个项目都提供：
   - Context Summarization：压缩冗长信息
   - Context Offloading：外部存储管理
   - LangGraph 完整实战代码（779行深度教程）
+
+#### 2.6 Agent Memory - 记忆系统 ⭐ 核心！
+- [x] [必看👍 Agent Memory 完整教程：从原理到实战](./docs/02-tech-stack/15-agent-memory.md)
+  - Memory 核心概念：为什么需要记忆？
+  - 三层记忆架构：工作记忆、情节记忆、语义记忆
+  - 3种实现方案：Mem0（最简单）、MemGPT（虚拟内存）、自己实现
+  - 5大核心问题：何时存储、如何存储、如何检索、何时遗忘、如何更新
+  - 完整代码实现（50行自定义 Memory）
+  - 性能优化技巧：分级存储、时间衰减、图谱增强
+  - 面试高频问题与标准答案
 
 ---
 
