@@ -287,38 +287,11 @@
 > 5.  **监控与调试**：建立可观测性（Observability）体系，记录 Agent 的决策轨迹（Trace），是持续迭代和优化的前提。
 
 ---
-
-## 📚 进阶学习资源
-
-### 核心论文
-
-1.  **ReAct: Synergizing Reasoning and Acting in Language Models**
-    -   链接：https://arxiv.org/abs/2210.03629
-    -   简介：奠定了现代 Agent "思考-行动" 范式的基础。
-2.  **Reflexion: Language Agents with Verbal Reinforcement Learning**
-    -   链接：https://arxiv.org/abs/2303.11366
-    -   简介：引入了自我反思机制，使 Agent 能够从过去的错误中学习。
-3.  **Toolformer: Language Models Can Teach Themselves to Use Tools**
-    -   链接：https://arxiv.org/abs/2302.04761
-    -   简介：探索了让语言模型自主学习使用工具的开创性工作。
-
-### 优质技术博客与课程
-
-1.  **Lilian Weng - LLM Powered Autonomous Agents**
-    -   链接：https://lilianweng.github.io/posts/2023-06-23-agent/
-2.  **DeepLearning.AI - Building Agentic RAG**
-    -   链接：https://www.deeplearning.ai/short-courses/
-
----
-
 ## 🔗 内部相关文档
-
 - [Agent 开发框架对比](./frameworks.md)
 - [Agent 资源总览](./README.md)
 - [AI Agent 生产环境实践](./ai-agent-production-challenges.md)
-
 ---
-
 ## 📌 文档信息
 
 **最后更新**：2025-11  
@@ -326,8 +299,6 @@
 
 **更新历史**：
 -   2025-11：创建官方学习指南汇总文档，整合 Anthropic、OpenAI、Google 及社区核心资源，并提供系统学习路径和面试指引。
-
 ---
-
 ⭐ 如果本指南对您有所帮助，欢迎 Star 支持，也欢迎通过 Pull Request 贡献更多优质资源。
 
