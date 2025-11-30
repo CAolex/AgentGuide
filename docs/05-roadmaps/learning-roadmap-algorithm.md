@@ -477,5 +477,99 @@
 
 ---
 
-## 👉 返回主文档：[README.md](../README.md)
+## 📚 核心学习资源推荐
+
+> **精选业界最优质的学习资源，助你快速提升算法能力**
+
+### 🤖 智能体开发
+
+**[Hello-Agents - Datawhale](https://datawhalechina.github.io/hello-agents/)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: Agent 开发完整教程，从基础到进阶
+- 🎯 **适合**: 入门 Agent 算法开发，了解核心原理
+- 💡 **亮点**: 中文友好、实战导向、Datawhale 出品
+
+---
+
+### 📊 RAG 算法优化
+
+**[All-in-RAG - Datawhale](https://github.com/datawhalechina/all-in-rag)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: RAG 全流程算法优化，涵盖检索、重排、GraphRAG
+- 🎯 **适合**: RAG 算法研究、检索优化、算法创新
+- 💡 **亮点**: 系统化 RAG 教程、算法改进方向、实战案例
+
+---
+
+### 🔧 模型微调
+
+**[Unsloth - 高效微调框架](https://github.com/unslothai/unsloth)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: 2-5倍微调加速，显存优化，支持 LoRA/QLoRA
+- 🎯 **适合**: 高效微调、资源受限场景、快速实验
+- 💡 **亮点**: 速度快、显存省、易上手
+
+**[LLaMA-Factory - 一站式微调平台](https://github.com/hiyouga/LLaMA-Factory)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: 支持100+ LLM微调，Web UI + CLI，SFT/DPO/PPO
+- 🎯 **适合**: 算法实验、Function Call微调、模型对齐
+- 💡 **亮点**: 功能全面、社区活跃、文档完善
+
+---
+
+### 🗃️ 数据处理
+
+**[Easy-Dataset - 数据处理工具集](https://github.com/ConardLi/easy-dataset)**
+- ⭐ **推荐指数**: ★★★★☆
+- 📖 **内容**: 数据清洗、格式转换、质量评估
+- 🎯 **适合**: 微调数据准备、数据质量提升
+- 💡 **亮点**: 自动化数据处理、提升数据质量
+
+---
+
+### 🧠 从零构建大模型（理论深度）
+
+**[nanoGPT - Karpathy](https://github.com/karpathy/nanoGPT)**
+- ⭐ **推荐指数**: ★★★★★（算法岗必看）
+- 📖 **内容**: 从零实现 GPT，代码简洁、注释详细
+- 🎯 **适合**: 深入理解 Transformer、预训练原理
+- 💡 **亮点**: Karpathy 亲自编写、500行核心代码、理解模型本质
+
+**[nanochat - Karpathy](https://github.com/karpathy/nanochat)**
+- ⭐ **推荐指数**: ★★★★★（算法岗必看）
+- 📖 **内容**: 从零构建对话模型，涵盖训练、推理、部署
+- 🎯 **适合**: 理解对话系统、端到端模型构建
+- 💡 **亮点**: 完整的训练流程、实战导向、算法细节
+
+---
+
+### 🎯 完整学习路径
+
+**[AgentGuide - AI Agent 完整学习路线](https://github.com/adongwanai/AgentGuide)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: Agent 开发、RAG 系统、上下文工程、面试指南
+- 🎯 **适合**: 系统化学习、求职准备、技术路线规划
+- 💡 **亮点**: 算法岗/开发岗双路线、面试题库、简历模板
+
+---
+
+### 💡 学习建议
+
+#### **入门阶段（第1-2周）**
+1. 先学习 **Hello-Agents** 建立 Agent 开发基础
+2. 阅读 **nanoGPT** 源码理解模型原理
+
+#### **进阶阶段（第3-6周）**
+3. 深入 **All-in-RAG** 学习检索算法优化
+4. 使用 **LLaMA-Factory** 进行微调实验
+5. 用 **Unsloth** 提升训练效率
+
+#### **实战阶段（第7-9周）**
+6. 参考 **nanochat** 构建对话系统
+7. 使用 **Easy-Dataset** 处理训练数据
+8. 跟随 **AgentGuide** 完成项目和面试准备
+
+---
+
+## 👉 返回主文档：[README.md](../../README.md)
 

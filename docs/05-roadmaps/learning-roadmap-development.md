@@ -330,5 +330,119 @@
 
 ---
 
-## 👉 返回主文档：[README.md](../README.md)
+## 📚 核心学习资源推荐
+
+> **精选业界最优质的学习资源，助你快速提升工程能力**
+
+### 🤖 智能体开发
+
+**[Hello-Agents - Datawhale](https://datawhalechina.github.io/hello-agents/)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: Agent 开发完整教程，从基础到进阶
+- 🎯 **适合**: 快速上手 Agent 开发，掌握框架使用
+- 💡 **亮点**: 中文友好、实战导向、案例丰富
+
+---
+
+### 📊 RAG 系统搭建
+
+**[All-in-RAG - Datawhale](https://github.com/datawhalechina/all-in-rag)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: RAG 系统完整实现，涵盖文档解析、检索、生成
+- 🎯 **适合**: 构建企业级 RAG 系统、性能优化
+- 💡 **亮点**: 完整代码、最佳实践、生产级方案
+
+---
+
+### 🔧 模型微调（可选）
+
+**[Unsloth - 高效微调框架](https://github.com/unslothai/unsloth)**
+- ⭐ **推荐指数**: ★★★★☆
+- 📖 **内容**: 快速微调工具，降低资源消耗
+- 🎯 **适合**: 需要快速微调、资源有限的场景
+- 💡 **亮点**: 速度快、易上手、成本低
+
+**[LLaMA-Factory - 一站式微调平台](https://github.com/hiyouga/LLaMA-Factory)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: Web UI 微调平台，支持 SFT、LoRA、DPO
+- 🎯 **适合**: Function Call 微调、模型定制化
+- 💡 **亮点**: 可视化界面、功能全面、易于使用
+
+---
+
+### 🗃️ 数据处理
+
+**[Easy-Dataset - 数据处理工具集](https://github.com/ConardLi/easy-dataset)**
+- ⭐ **推荐指数**: ★★★★☆
+- 📖 **内容**: 数据清洗、格式转换、质量评估
+- 🎯 **适合**: RAG 数据准备、知识库构建
+- 💡 **亮点**: 自动化工具、提升数据质量
+
+---
+
+### 🧠 理解大模型原理（加分项）
+
+**[nanoGPT - Karpathy](https://github.com/karpathy/nanoGPT)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: 从零实现 GPT，理解模型原理
+- 🎯 **适合**: 深入理解 LLM 工作机制、面试加分
+- 💡 **亮点**: 代码简洁、注释详细、理解本质
+
+**[nanochat - Karpathy](https://github.com/karpathy/nanochat)**
+- ⭐ **推荐指数**: ★★★★☆
+- 📖 **内容**: 从零构建对话模型
+- 🎯 **适合**: 理解对话系统、端到端实现
+- 💡 **亮点**: 完整流程、实战导向
+
+---
+
+### 🎯 完整学习路径
+
+**[AgentGuide - AI Agent 完整学习路线](https://github.com/adongwanai/AgentGuide)**
+- ⭐ **推荐指数**: ★★★★★
+- 📖 **内容**: Agent 开发、RAG 系统、上下文工程、面试指南
+- 🎯 **适合**: 系统化学习、求职准备、技术路线规划
+- 💡 **亮点**: 开发岗/算法岗双路线、实战项目、简历模板
+
+---
+
+### 💡 学习建议
+
+#### **入门阶段（第1-2周）**
+1. 先学习 **Hello-Agents** 建立 Agent 开发基础
+2. 浏览 **nanoGPT** 了解模型原理（可选）
+
+#### **进阶阶段（第3-6周）**
+3. 深入 **All-in-RAG** 学习 RAG 系统搭建
+4. 使用 **LLaMA-Factory** 进行 Function Call 微调（可选）
+5. 用 **Easy-Dataset** 处理数据
+
+#### **实战阶段（第7-8周）**
+6. 参考 **AgentGuide** 完成项目
+7. 构建完整的生产级系统
+8. 准备面试和简历
+
+---
+
+### 🛠️ 推荐技术栈组合
+
+#### **RAG 系统项目**
+```
+后端: FastAPI + LangChain + Milvus/Chroma
+数据处理: Easy-Dataset
+监控: LangSmith + Prometheus + Grafana
+部署: Docker + Docker Compose
+```
+
+#### **Multi-Agent 项目**
+```
+框架: CrewAI / AutoGen / LangGraph
+工具: LangChain Tools + Custom Tools
+工作流: State Machine + Task Queue
+监控: LangSmith + 自定义日志
+```
+
+---
+
+## 👉 返回主文档：[README.md](../../README.md)
 
