@@ -54,8 +54,9 @@
 **发表时间**：2023年10月  
 **机构**：UC Berkeley  
 **论文链接**：https://arxiv.org/abs/2310.08560  
-**GitHub**：https://github.com/cpacker/MemGPT (10k+ Stars)
+**GitHub**：https://github.com/cpacker/MemGPT (19k+ Stars)
 
+![[Pasted image 20251130164110.png]]
 **核心思想**：
 把 LLM 当作操作系统，借鉴操作系统的虚拟内存管理机制：
 - **主内存**（Main Context）：固定大小的上下文窗口
@@ -86,8 +87,8 @@
 **论文标题**：Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory  
 **发表时间**：2024年4月  
 **论文链接**：https://arxiv.org/html/2504.19413v1  
-**GitHub**：https://github.com/mem0ai/mem0 (20k+ Stars)
-
+**GitHub**：https://github.com/mem0ai/mem0 (43k+ Stars)
+![[Pasted image 20251130164200.png]]
 **核心思想**：
 图增强的记忆框架，自动提取和管理关键信息：
 - 实体提取 + 关系建模
@@ -123,12 +124,11 @@
 ---
 
 ### 3. Zep ⭐⭐⭐⭐ 时序知识图谱
-
 **论文标题**：Temporal Knowledge Graphs for Agent Memory  
 **发表时间**：2025年1月  
 **论文链接**：https://arxiv.org/pdf/2501.13956  
 **GitHub**：https://github.com/getzep/zep
-
+![[Pasted image 20251130164904.png]]
 **核心思想**：
 用时序知识图谱管理记忆，捕捉事件的时间关系：
 - 节点：实体、事件
@@ -148,13 +148,12 @@
 ---
 
 ### 4. HippoRAG ⭐⭐⭐⭐ 神经生物学启发
-
 **论文标题**：HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models  
 **发表时间**：2024年5月  
 **机构**：OSU、UCLA  
 **论文链接**：https://arxiv.org/abs/2405.14831  
 **GitHub**：https://github.com/OSU-NLP-Group/HippoRAG
-
+![[Pasted image 20251130164954.png]]
 **核心思想**：
 模拟人脑海马体的记忆形成机制：
 - **海马索引**：快速定位相关记忆
@@ -177,11 +176,11 @@
 ---
 
 ### 5. MemOS ⭐⭐⭐⭐ 类操作系统架构
-
 **论文标题**：MemOS: An Operating System for AI Agent Memory  
 **发表时间**：2025年5月  
 **论文链接**：https://arxiv.org/abs/2505.22101
-
+![[Pasted image 20251130165151.png]]
+![[Pasted image 20251130165046.png]]
 **核心思想**：
 提出类操作系统的记忆中枢，解决四大问题：
 1. 长期对话状态建模差
@@ -210,7 +209,7 @@
 **机构**：Google Research  
 **论文链接**：https://arxiv.org/abs/2203.08913  
 **GitHub**：https://github.com/lucidrains/memorizing-transformers-pytorch
-
+![[Pasted image 20251130165339.png]]
 **核心思想**：
 首次在 Transformer 中引入外部记忆，通过 KNN 检索历史信息：
 - 每个 token 都存储到外部记忆库
@@ -243,7 +242,7 @@
 **机构**：清华大学  
 **论文链接**：https://arxiv.org/abs/2402.04624  
 **GitHub**：https://github.com/wangyu-ustc/MemoryLLM
-
+![[Pasted image 20251130165531.png]]
 **核心思想**：
 在每层 Transformer 中插入可更新的 Memory Tokens：
 - **固定参数**：预训练的模型参数（不变）
@@ -264,11 +263,10 @@
 ---
 
 ### 8. Memory³ ⭐⭐⭐⭐ 分层记忆
-
 **论文标题**：Memory³: Language Modeling with Explicit Memory  
 **发表时间**：2024年7月  
 **论文链接**：https://arxiv.org/abs/2407.01178
-
+![[Pasted image 20251130165719.png]]
 **核心思想**：
 模拟人脑，将记忆分为三层：
 - **感知记忆**：原始输入
@@ -290,7 +288,7 @@
 **机构**：浙江大学  
 **论文链接**：https://arxiv.org/abs/2405.14768  
 **GitHub**：https://github.com/zjunlp/EasyEdit
-
+![[Pasted image 20251130165809.png]]
 **核心思想**：
 - **主记忆**：预训练知识（冻结）
 - **侧记忆**：后续编辑的知识（可更新）
@@ -309,7 +307,7 @@
 **机构**：Google DeepMind  
 **论文链接**：https://arxiv.org/abs/2501.00663  
 **GitHub**：https://github.com/lucidrains/titans-pytorch
-
+![[Pasted image 20251130165853.png]]
 **核心思想**：
 设计神经网络模块，学习何时存储、何时遗忘：
 - **存储门控**：决定哪些信息值得存储
