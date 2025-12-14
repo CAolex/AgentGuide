@@ -168,6 +168,18 @@
     "featured": false
   },
   {
+    "id": "107",
+    "title": "大模型基础必考题（107题）",
+    "description": "- ✅ 算法工程师 - ✅ LLM研发工程师 - ⏱️ 建议学习时间：10-15天 - 🎯 覆盖面试高频考点",
+    "category": "求职",
+    "tags": [],
+    "level": "入门",
+    "type": "指南",
+    "url": "https://github.com/adongwanai/AgentGuide/blob/main/docs/04-interview/16-llm-fundamentals.md",
+    "date": "2025-12-14",
+    "featured": false
+  },
+  {
     "id": "07-career-transition",
     "title": "07-career-transition",
     "description": "**关键问题：算法和开发如何划分？**",
