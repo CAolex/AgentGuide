@@ -11,14 +11,25 @@
 - **公司来源**:标注真题来源公司(字节/阿里/腾讯等)
 
 ## 🔍 问题速览（点击跳转）
-- [Q1](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
+- [Q1: 请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?](#q1)
 ---
 
 ## 第一部分:LLM 核心理论(32题)
 
 ### 1.1 Transformer 架构与注意力机制(必考⭐⭐⭐)
 
-<a id="qx"></a>
+<a id="q1"></a>
 #### Q1:请详细解释一下 Transformer 模型中的自注意力机制是如何工作的?它为什么比 RNN 更适合处理长序列?
 
 **难度**:⭐⭐
@@ -77,6 +88,7 @@
 
 ---
 
+<a id="q2"></a>
 #### Q2:什么是位置编码?在 Transformer 中,为什么它是必需的?请列举至少两种实现方式。
 
 **难度**:⭐⭐
@@ -133,6 +145,7 @@ pos_embedding = nn.Embedding(max_seq_len, d_model)
 
 ---
 
+<a id="q3"></a>
 #### Q3:请你详细介绍ROPE,对比绝对位置编码它的优劣势分别是什么?
 
 **难度**:⭐⭐⭐
@@ -186,6 +199,7 @@ attention_score = q_m · k_n^T
 
 ---
 
+<a id="q4"></a>
 #### Q4:你知道MHA,MQA,GQA的区别吗?详细解释一下。
 
 **难度**:⭐⭐⭐
@@ -239,6 +253,7 @@ attention_score = q_m · k_n^T
 
 ---
 
+<a id="q5"></a>
 #### Q5:请比较一下几种常见的 LLM 架构,例如 Encoder-Only, Decoder-Only, 和 Encoder-Decoder,并说明它们各自最擅长的任务类型。
 
 **难度**:⭐⭐
@@ -302,6 +317,8 @@ attention_score = q_m · k_n^T
 
 ### 1.2 训练与优化(⭐⭐)
 
+
+<a id="q6"></a>
 #### Q6:什么是Scaling Laws?它揭示了模型性能、计算量和数据量之间的什么关系?这对LLM的研发有什么指导意义?
 
 **难度**:⭐⭐
@@ -366,6 +383,7 @@ DeepMind 的 Chinchilla 论文发现:
 
 ---
 
+<a id="q7"></a>
 #### Q7:在LLM的推理阶段,有哪些常见的解码策略?请解释 Greedy Search, Beam Search, Top-K Sampling 和 Nucleus Sampling (Top-P) 的原理和优缺点。
 
 **难度**:⭐⭐
@@ -468,6 +486,7 @@ P(token) = softmax(logits / temperature)
 
 ---
 
+<a id="q8"></a>
 #### Q8:什么是词元化?请比较一下 BPE 和 WordPiece 这两种主流的子词切分算法。
 
 **难度**:⭐⭐
@@ -584,6 +603,7 @@ WordPiece 切分: "playing" → ["play", "##ing"]
 
 ### 1.3 模型能力与现象(⭐⭐)
 
+<a id="q9"></a>
 #### Q9:你觉得NLP和LLM最大的区别是什么?两者有何共同和不同之处?
 
 **难度**:⭐
@@ -649,6 +669,7 @@ LLM:
 
 ---
 
+<a id="q10"></a>
 #### Q10:L1和L2正则化分别是什么,什么场景适合使用呢?
 
 **难度**:⭐
@@ -713,6 +734,7 @@ w = w - lr * grad - lr * lambda * w  # Weight Decay
 
 ---
 
+<a id="q11"></a>
 #### Q11:"涌现能力"是大型模型中一个备受关注的现象,请问你如何理解这个概念?它通常在模型规模达到什么程度时出现?
 
 **难度**:⭐⭐
@@ -808,7 +830,7 @@ w = w - lr * grad - lr * lambda * w  # Weight Decay
 - 提及Scaling Law与涌现的关系
 
 ---
-
+<a id="q12"></a>
 #### Q12:激活函数有了解吗,你知道哪些LLM常用的激活函数?为什么选用它?
 
 **难度**:⭐⭐
@@ -919,7 +941,7 @@ FFN(x) = (Swish(xW1) ⊙ xW2) W3
 - 提及 SwiGLU vs GELU 的性能对比
 
 ---
-
+<a id="q13"></a>
 #### Q13:混合专家模型（MoE）是如何在不显著增加推理成本的情况下，有效扩大模型参数规模的？请简述其工作原理。
 
 **难度**:⭐⭐⭐
@@ -961,7 +983,7 @@ MoE 成功地**解耦**了“模型总参数量”和“推理计算量”：
     *   *例子：Mixtral 8x7B 推理时，每个 Token 只用到约 13B 的参数。*
       
 ---
-
+<a id="q14"></a>
 #### Q14:在训练一个百或千亿参数级别的 LLM 时，你会面临哪些主要的工程和算法挑战？（例如：显存、通信、训练不稳定性等）
 
 **难度**:⭐⭐⭐
@@ -1049,7 +1071,7 @@ GPU 算力极强，如果 CPU 数据预处理和传输跟不上，GPU 就会处�
 
 
 ---
-
+<a id="q15"></a>
 #### Q15:开源框架了解过哪些？Qwen，Deepseek的论文是否有研读过，说一下其中的创新点主要体现在哪？
 
 **难度**:⭐⭐
@@ -1132,7 +1154,7 @@ DeepSeek 的论文（尤其是 **DeepSeek-V2** 和 **DeepSeek-V3**）非常值�
 如果你要搞**模型效果调优和数据配方**，**Qwen** 是最好的参考书，它证明了即便不修改标准 Transformer 架构，只要数据（Data）和对齐（Alignment）做得足够好，模型上限依然深不可测。
 
 ---
-
+<a id="q16"></a>
 #### Q16:最近读过哪些LLM比较前沿的论文，聊一下它的相关方法，针对什么问题，提出了什么方法，对比实验有哪些？
 
 **难度**:⭐⭐⭐
@@ -1145,7 +1167,7 @@ DeepSeek 的论文（尤其是 **DeepSeek-V2** 和 **DeepSeek-V3**）非常值�
 ## 第二部分:VLM 多模态(11题)
 
 ### 2.1 核心概念与挑战(⭐⭐⭐)
-
+<a id="q17"></a>
 #### Q1:多模态大模型(如 VLM)的核心挑战是什么?即如何实现不同模态信息(如视觉和语言)的有效对齐和融合?
 
 **难度**:⭐⭐
@@ -1229,7 +1251,7 @@ Visual Tokens → Cross-Attention → Language Model
 - 了解最新的VLM架构(LLaVA、Qwen-VL)
 
 ---
-
+<a id="q18"></a>
 #### Q2:请解释 CLIP 模型的工作原理。它是如何通过对比学习来连接图像和文本的？
 
 **难度**:⭐⭐⭐
@@ -1327,7 +1349,7 @@ CLIP 的伟大之处在于它**打破了固定标签的限制**。
 *   **CLIP：** 只要你能用语言描述出来的东西，它理论上都能在图像中找到对应的特征。它成功地将**视觉信号**映射到了**语义空间**，为现在的多模态爆发奠定了基础。
 
 ---
-
+<a id="q19"></a>
 #### Q3:像 LLaVA 或 MiniGPT-4 这样的模型是如何将一个预训练好的视觉编码器（Vision Encoder）和一个大语言模型（LLM）连接起来的？请描述其关键的架构设计。
 
 **难度**:⭐⭐⭐
@@ -1436,7 +1458,7 @@ Input Embeddings = [Visual_Embeddings] + [Text_Embeddings]
     *   **目的：** 让 LLM 学会根据看到的图像内容，遵循人类的指令进行复杂的逻辑推理和对话。
 
 ---
-
+<a id="q20"></a>
 #### Q4:什么是视觉指令微调？为什么说它是让 VLM 具备良好对话和指令遵循能力的关键步骤？
 
 **难度**:⭐⭐
@@ -1505,7 +1527,7 @@ LLaVA 之所以能引爆这个领域，最大的创新就在于它通过 GPT-4 *
 单纯的图像-文本对齐（如 CLIP）只学到了**共现关系**（看到这堆像素 = 看到“苹果”这个词）。
 但在指令微调中，通过问答数据（如“为什么这个人拿着雨伞？”->“因为地面是湿的，可能刚下过雨”），强迫模型去关注图像中的**因果关系**和**逻辑细节**，而不仅仅是物体识别。它将视觉感知与 LLM 强大的世界知识库真正打通了。
 ---
-
+<a id="q21"></a>
 #### Q5:在处理视频等多模态数据时，相比于静态图片，VLM 需要额外解决哪些问题？（例如，如何表征时序信息？）
 
 **难度**:⭐⭐⭐
@@ -1573,7 +1595,7 @@ LLaVA 之所以能引爆这个领域，最大的创新就在于它通过 GPT-4 *
 *   **对策：** 引入 **Audio Encoder (如 Whisper 或 CLAP)**，将音频波形也转换成 Token，与视觉 Token 一起拼接到 Prompt 中喂给 LLM。
 
 ---
-
+<a id="q22"></a>
 #### Q6:请解释Grounding在 VLM 领域中的含义。我们如何评估一个 VLM 是否能将文本描述准确地对应到图片中的特定区域？
 
 **难度**:⭐⭐⭐
@@ -1657,7 +1679,7 @@ Grounding 通常包含两个方向的任务：
 *   **标准：** 如果这个点落在目标物体的掩码（Mask）或边界框内，就算命中 (Hit)，否则算脱靶 (Miss)。
 
 ---
-
+<a id="q23"></a>
 #### Q7:请对比至少两种不同的 VLM 架构范式（如共享编码器 vs. 跨模态注意力融合），并分析它们的优劣。
 
 **难度**:⭐⭐⭐
@@ -1747,7 +1769,7 @@ Grounding 通常包含两个方向的任务：
 *   如果你要训练一个**通用的基础大模型**，并希望它像 GPT-4V 一样处理复杂的网页和长视频，**Flamingo (深度融合)** 或 **原生统一架构** 是必经之路。
 
 ---
-
+<a id="q24"></a>
 #### Q8:在 VLM 的应用中，如何处理高分辨率的输入图像？这会带来哪些计算和模型设计上的挑战？
 
 **难度**:⭐⭐⭐
@@ -1837,7 +1859,7 @@ Grounding 通常包含两个方向的任务：
 *   **最通用的方案：** **AnyRes（切片+全局缩略图）**。这是目前性价比最高的方案。
 *   **未来的趋势：** **Token 压缩技术**。因为我们希望看 4K 甚至 8K 的视频，如果不把 10000 个 Token 压缩成 1000 个，LLM 的推理成本将永远无法商业化落地。
 ---
-
+<a id="q25"></a>
 #### Q9:VLM 在生成内容时，同样会遇到"幻觉"（Hallucination）问题，但它的表现形式和纯文本 LLM 有何不同？请举例说明。
 
 **难度**:⭐⭐
@@ -1927,7 +1949,7 @@ VLM 幻觉的独特之处在于**“视觉-语言的不对齐”**。
 | **解决难点** | 需要外部知识库（RAG）或更强的推理能力 | 需要增强视觉编码器的分辨率、加强图文对齐训练（Visual Grounding） |
 
 ---
-
+<a id="q26"></a>
 #### Q10:除了图片描述和视觉问答（VQA），你还能列举出 VLM 的哪些前沿或具有潜力的应用方向？
 
 **难度**:⭐⭐
@@ -1991,7 +2013,7 @@ VLM 的未来不在于“描述世界”，而在于**“理解世界并与之�
 从**静态（图片）**走向**动态（视频/行动）**，从**被动观察**走向**主动操作（Agent/机器人）**，是目前最清晰的发展路径。
 
 ---
-
+<a id="q27"></a>
 #### Q11:有没有做过VLM相关方面的微调？什么模型？
 
 **难度**:⭐
@@ -2002,7 +2024,7 @@ VLM 的未来不在于“描述世界”，而在于**“理解世界并与之�
 ---
 
 ### 2.2 多模态训练与优化(⭐⭐⭐)
-
+<a id="q28"></a>
 #### Q12:多模态学习中常见的融合方式有哪些？早期融合 vs 晚期融合 vs 中间融合的区别和适用场景？
 
 **难度**:⭐⭐⭐
@@ -2123,7 +2145,7 @@ VLM 的未来不在于“描述世界”，而在于**“理解世界并与之�
 *   **选晚期融合：** 如果你已经有了两个训练好的强力单模态模型，想快速提升一点效果，或者你的数据经常缺胳膊少腿（有时没声音，有时没画面）。
 *   **选中间融合（特别是 Cross-Attention）：** 如果你在做 VQA、由图生文等需要深度理解内容的任务，这是目前的标准答案。
 ---
-
+<a id="q29"></a>
 #### Q13:Vision Transformer (ViT) 和 CNN 在图像特征提取上的优劣对比？
 
 **难度**:⭐⭐
@@ -2210,7 +2232,7 @@ Vision Transformer (ViT) 和 卷积神经网络 (CNN) 是目前计算机视觉�
 *   **选择 ViT：** 如果你有海量数据（或能使用预训练大模型）、算力充足、任务需要理解复杂的全局语义关系（如多模态理解、复杂的场景分割）、或者追求 SOTA 的精度上限。
 
 ---
-
+<a id="q30"></a>
 #### Q14:什么是对比学习(Contrastive Learning)？InfoNCE loss 的公式和作用？
 
 **难度**:⭐⭐⭐
@@ -2219,7 +2241,7 @@ Vision Transformer (ViT) 和 卷积神经网络 (CNN) 是目前计算机视觉�
 **公司**:字节(高频)
 
 ---
-
+<a id="q31"></a>
 #### Q15:大模型训练中常用的优化器有哪些？AdamW 和 Adam 的区别是什么？
 
 **难度**:⭐⭐
@@ -2307,7 +2329,7 @@ AdamW（**Adam with Weight decay**）的做法是：**将权重衰减从梯度�
 ### 结论
 **AdamW 是 Adam 的“修正版”。** 它解决了自适应优化器中 L2 正则化失效的问题。对于 Transformer 类的大模型，**必须使用 AdamW**，几乎不会使用标准的 Adam。
 ---
-
+<a id="q32"></a>
 #### Q16:如何评估多模态模型的性能？除了准确率，还有哪些指标？（如 Recall@K, mAP 等）
 
 **难度**:⭐⭐
@@ -2414,7 +2436,7 @@ AdamW（**Adam with Weight decay**）的做法是：**将权重衰减从梯度�
 | **多模态大模型** (MLLM) | **MME, MMBench (综合榜单)** | POPE (幻觉率), Token Per Second (速度) |
 
 ---
-
+<a id="q33"></a>
 #### Q17:什么是 instruction tuning？在多模态场景下如何做？
 
 **难度**:⭐⭐⭐
@@ -2491,7 +2513,7 @@ Instruction Tuning 的数据通常由三部分组成：
 这就是为什么现在的多模态大模型（如 LLaVA, GPT-4V）不仅能认出图里有什​​么，还能跟你聊图里的哲学意义的原因。
 
 ---
-
+<a id="q34"></a>
 #### Q18:BLIP / BLIP-2 的核心创新点是什么？和 Flamingo 有什么区别？
 
 **难度**:⭐⭐⭐
@@ -2576,7 +2598,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 ## 第三部分:RLHF 对齐技术(13题)
 
 ### 3.1 RLHF 核心流程(⭐⭐⭐)
-
+<a id="q35"></a>
 #### Q1:和传统SFT相比,RLHF旨在解决语言模型中的哪些核心问题?为什么说SFT本身不足以实现我们期望的"对齐"目标?
 
 **难度**:⭐⭐
@@ -2673,7 +2695,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 - 提及 RLHF 的局限(成本高、不稳定)
 
 ---
-
+<a id="q36"></a>
 #### Q2:请详细阐述经典RLHF流程的三个核心阶段。在每个阶段，输入是什么，输出是什么，以及该阶段的关键目标是什么？
 
 **难度**:⭐⭐⭐
@@ -2682,7 +2704,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、字节、阿里(高频)
 
 ---
-
+<a id="q37"></a>
 #### Q3:在RM训练阶段，我们通常收集的是成对比较数据，而不是让人类标注者直接给回复打一个绝对分数。你认为这样做的主要优势和潜在的劣势分别是什么？
 
 **难度**:⭐⭐
@@ -2691,7 +2713,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、字节
 
 ---
-
+<a id="q38"></a>
 #### Q4:奖励模型的设计至关重要。它的模型架构通常如何选择？它与我们最终要优化的LLM是什么关系？在训练奖励模型时，常用的损失函数是什么？请解释其背后的数学原理（例如，可以结合Bradley-Terry模型来解释）。
 
 **难度**:⭐⭐⭐
@@ -2700,7 +2722,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、DeepMind(高频)
 
 ---
-
+<a id="q39"></a>
 #### Q5:在RLHF的第三阶段，PPO是最主流的强化学习算法。为什么选择PPO，而不是其他更简单的策略梯度算法（如REINFORCE）或者Q-learning系算法？PPO中的KL散度惩罚项起到了什么关键作用？
 
 **难度**:⭐⭐⭐
@@ -2709,7 +2731,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、DeepMind、字节(高频)
 
 ---
-
+<a id="q40"></a>
 #### Q6:如果在PPO训练过程中，KL散度惩罚项的系数 β 设置得过大或过小，分别会导致什么样的问题？你将如何通过实验和观察来调整这个超参数？
 
 **难度**:⭐⭐⭐
@@ -2718,7 +2740,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、字节
 
 ---
-
+<a id="q41"></a>
 #### Q7:什么是"奖励作弊/奖励黑客"（Reward Hacking）？请结合一个具体的LLM应用场景给出一个例子，并探讨几种可能的缓解策略。
 
 **难度**:⭐⭐⭐
@@ -2727,7 +2749,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、Anthropic、字节(重要)
 
 ---
-
+<a id="q42"></a>
 #### Q8:RLHF流程复杂且不稳定。近年来出现了一些替代方案，例如DPO。请解释DPO的核心思想，并比较它与传统RLHF（基于PPO）的主要区别和优势。
 
 **难度**:⭐⭐⭐
@@ -2736,7 +2758,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(高频)
 
 ---
-
+<a id="q43"></a>
 #### Q9:想象一下，你训练完成的RLHF模型在离线评估中表现优异，奖励模型分数很高，但上线后用户反馈其回答变得越来越"模式化"、奉承、且缺乏信息量。你认为可能的原因是什么？你会从哪些方面着手分析和解决这个问题？
 
 **难度**:⭐⭐⭐⭐
@@ -2745,7 +2767,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、Anthropic、字节
 
 ---
-
+<a id="q44"></a>
 #### Q10:你知道Deepseek的GRPO吗，它和PPO的主要区别是什么？优劣是什么？
 
 **难度**:⭐⭐⭐
@@ -2754,7 +2776,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(前沿技术)
 
 ---
-
+<a id="q45"></a>
 #### Q11:GSPO和DAPO有听说过吗？他们和GRPO有什么区别？
 
 **难度**:⭐⭐⭐⭐
@@ -2763,7 +2785,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(前沿技术)
 
 ---
-
+<a id="q46"></a>
 #### Q12:如何解决信用分配问题？token级别和seq级别的奖励有何不同？
 
 **难度**:⭐⭐⭐
@@ -2772,7 +2794,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:OpenAI、DeepMind
 
 ---
-
+<a id="q47"></a>
 #### Q13:除了人类反馈，我们还可以利用AI自身的反馈来做对齐，即RLAIF。请谈谈你对RLAIF的理解，它的潜力和风险分别是什么？
 
 **难度**:⭐⭐⭐
@@ -2783,7 +2805,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 ---
 
 ### 3.2 SFT训练实践(⭐⭐⭐)
-
+<a id="q48"></a>
 #### Q14:SFT 的 loss 如何只计算回答部分？(如何 ignore padding token?)
 
 **难度**:⭐⭐
@@ -2792,7 +2814,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:美团(真题)
 
 ---
-
+<a id="q49"></a>
 #### Q15:你对SFT的理解是什么？与预训练相比有什么差异？
 
 **难度**:⭐⭐
@@ -2801,7 +2823,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里
 
 ---
-
+<a id="q50"></a>
 #### Q16:SFT冷启动时数据集构造需要注意哪些因素？为什么要做数据清洗与均衡采样？
 
 **难度**:⭐⭐⭐
@@ -2810,7 +2832,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(高频)
 
 ---
-
+<a id="q51"></a>
 #### Q17:微调时的训练数据是怎么构建的？如何保证样本多样性和质量？
 
 **难度**:⭐⭐⭐
@@ -2819,7 +2841,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(高频)
 
 ---
-
+<a id="q52"></a>
 #### Q18:SFT+DPO训练怎么组织这部分数据的？是自己构造还是用公开数据？
 
 **难度**:⭐⭐⭐
@@ -2828,7 +2850,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:美团、字节(真题)
 
 ---
-
+<a id="q53"></a>
 #### Q19:SFT 的数据集是越大越好吗？会存在scaling law 吗？
 
 **难度**:⭐⭐⭐
@@ -2837,7 +2859,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(真题)
 
 ---
-
+<a id="q54"></a>
 #### Q20:SFT使用的数据可能和原始模型预训练时的数据分布有较大区别，怎么解决？
 
 **难度**:⭐⭐⭐
@@ -2846,7 +2868,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里(真题)
 
 ---
-
+<a id="q55"></a>
 #### Q21:SFT和强化学习各自有什么优缺点，分别适用于什么场景？
 
 **难度**:⭐⭐⭐
@@ -2855,7 +2877,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、DeepSeek(真题)
 
 ---
-
+<a id="q56"></a>
 #### Q22:什么场景下用SFT，什么场景下用RL？
 
 **难度**:⭐⭐
@@ -2866,7 +2888,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 ---
 
 ### 3.3 强化学习进阶(⭐⭐⭐⭐)
-
+<a id="q57"></a>
 #### Q23:PPO/GRPO 微调后，如何防止模型在分布外(OOD)问题上性能崩塌？
 
 **难度**:⭐⭐⭐⭐
@@ -2875,7 +2897,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:美团、字节(高频)
 
 ---
-
+<a id="q58"></a>
 #### Q24:是否自己实现过 RLHF 流程？不用框架能否手写 PPO 核心逻辑？
 
 **难度**:⭐⭐⭐⭐
@@ -2884,7 +2906,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:美团、字节
 
 ---
-
+<a id="q59"></a>
 #### Q25:为什么PPO要用value baseline和GAE？它们如何让训练更稳定？
 
 **难度**:⭐⭐⭐⭐
@@ -2893,7 +2915,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:DeepSeek、字节(真题)
 
 ---
-
+<a id="q60"></a>
 #### Q26:为什么GRPO在训练MOE时会出问题？原因是啥，怎么改进策略？
 
 **难度**:⭐⭐⭐⭐
@@ -2902,7 +2924,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:DeepSeek(真题)
 
 ---
-
+<a id="q61"></a>
 #### Q27:GRPO的KL散度是什么？KL散度中超参数如何设计？
 
 **难度**:⭐⭐⭐
@@ -2911,7 +2933,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:DeepSeek、字节(真题)
 
 ---
-
+<a id="q62"></a>
 #### Q28:为什么使用强化学习会存在训练不稳定问题？为什么业界还在用？
 
 **难度**:⭐⭐⭐
@@ -2920,7 +2942,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节、阿里
 
 ---
-
+<a id="q63"></a>
 #### Q29:rollout数量、batchsize数量和计算资源(卡的数量)有什么关系？线性？非线性？
 
 **难度**:⭐⭐⭐
@@ -2929,7 +2951,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节(真题)
 
 ---
-
+<a id="q64"></a>
 #### Q30:真实采样数量一定等于rollout数量吗？
 
 **难度**:⭐⭐
@@ -2938,7 +2960,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节(真题)
 
 ---
-
+<a id="q65"></a>
 #### Q31:交叉熵和KL散度的联系和区别？PPO的KL散度可以改成交叉熵吗？分类任务可以用KL散度吗？
 
 **难度**:⭐⭐⭐
@@ -2947,7 +2969,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **公司**:字节(真题)
 
 ---
-
+<a id="q66"></a>
 #### Q32:在使用 GRPO 提升大模型的Function Calling 能力时，除了结果奖励(outcome reward)，还可以如何设计过程奖励(process reward)？
 
 **难度**:⭐⭐⭐⭐
@@ -2958,7 +2980,7 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 ---
 
 ### 1.4 推理与优化(⭐⭐⭐)
-
+<a id="q67"></a>
 #### Q17:如何降低 Transformer 的计算复杂度？常见的稀疏注意力变体有哪些？
 
 **难度**:⭐⭐⭐
@@ -3086,7 +3108,7 @@ Transformer 模型的核心挑战在于其自注意力机制（Self-Attention）
 3.  **线性扩展性追求：** 关注 **Linear Transformer** 变体或最新的 **SSM (如 Mamba)** 架构（非 Transformer 架构，但解决同一痛点）。
 
 ---
-
+<a id="q68"></a>
 #### Q18:KV Cache是什么？为什么能极大地提升推理速度？
 
 **难度**:⭐⭐⭐
@@ -3190,7 +3212,7 @@ KV Cache 占用显存的大小 $\approx 2 \times \text{序列长度} \times \tex
 *   **代价：** 极其消耗显存，是限制长文本推理的主要瓶颈。
 
 ---
-
+<a id="q69"></a>
 #### Q19:LoRA微调的原理是什么？秩 r 的选择会对模型表现产生什么影响？
 
 **难度**:⭐⭐⭐
@@ -3287,7 +3309,7 @@ $$ \Delta W = \frac{\alpha}{r} (B \times A) $$
 4.  **注意过拟合：** 如果数据量很少（比如只有几百条），千万不要用大 $r$，否则模型会丧失泛化能力。
 
 ---
-
+<a id="q70"></a>
 #### Q20:在有限算力下做大模型微调有哪些常用方法？
 
 **难度**:⭐⭐⭐
@@ -3389,7 +3411,7 @@ $$ \Delta W = \frac{\alpha}{r} (B \times A) $$
 **公司**:字节、阿里(高频)
 
 ---
-
+<a id="q71"></a>
 #### Q22:DeepSpeed ZeRO Stage 1-3的区别是什么？什么时候用FSDP会更好？
 
 **难度**:⭐⭐⭐
@@ -3398,7 +3420,7 @@ $$ \Delta W = \frac{\alpha}{r} (B \times A) $$
 **公司**:字节、阿里(高频)
 
 ---
-
+<a id="q72"></a>
 #### Q23:vLLM框架是怎么做推理加速的？
 
 **难度**:⭐⭐⭐
@@ -3483,7 +3505,7 @@ vLLM 实现了细粒度的调度机制：
 *   **对于用户来说：** 同样的硬件，vLLM 能支持的并发量通常是 HuggingFace Transformers 的 **2-4 倍**，甚至更多。
 
 ---
-
+<a id="q73"></a>
 #### Q24:如果量化后模型理解能力下降怎么办？怎么做精度补偿？
 
 **难度**:⭐⭐⭐
@@ -3575,7 +3597,7 @@ vLLM 实现了细粒度的调度机制：
 3.  **混合策略：** 确保 Embedding 和 Head 层是 FP16 的。
 4.  **终极大招 (QLoRA)：** 加载 4-bit 模型，挂上 LoRA，用高质量指令数据微调 1-2 个 Epoch。**这通常能完全恢复甚至提升模型能力。**
 ---
-
+<a id="q74"></a>
 #### Q25:QLoRA是怎么降低资源成本的？NF4和FP16这组组合为什么有效？
 
 **难度**:⭐⭐⭐
@@ -3666,7 +3688,7 @@ NF4 是一种**基于分位数（Quantile）**的数据类型。它根据标准�
 *   **FP16/BF16 组合有效：** 靠“用时解压”保证了计算精度，配合全精度的 LoRA 参数来吸收量化噪音，实现了**“小空间换取高性能”**。
 
 ---
-
+<a id="q75"></a>
 #### Q26:如何估算 LLaMA-7B 模型推理时的显存占用？
 
 **难度**:⭐⭐⭐
@@ -3755,7 +3777,7 @@ $$ \text{KV Cache} = 2 \times \text{层数} \times \text{维度} \times \text{�
 3.  **长文本是大敌：** 如果你把序列长度拉到 16k 或 32k，KV Cache 会迅速吃掉 8GB-16GB 显存，此时即便模型是 INT4 的，你也可能爆显存。解决办法是开启 **GQA** (如果模型支持，如 LLaMA-3) 或 **KV Cache Quantization**。
 
 ---
-
+<a id="q76"></a>
 #### Q27:Prefix LM、Causal LM、Encoder-Decoder 三类架构的适用场景与优缺点？
 
 **难度**:⭐⭐
@@ -3764,7 +3786,7 @@ $$ \text{KV Cache} = 2 \times \text{层数} \times \text{维度} \times \text{�
 **公司**:美团(真题)
 
 ---
-
+<a id="q77"></a>
 #### Q28:bf16 和 float16 的区别？各占多少位？训练中如何选择？
 
 **难度**:⭐⭐
@@ -3858,7 +3880,7 @@ $$ \text{KV Cache} = 2 \times \text{层数} \times \text{维度} \times \text{�
 | **推荐场景** | 老显卡上的推理/微调 | **现代显卡上的预训练/微调 (LLM 标配)** |
 
 ---
-
+<a id="q78"></a>
 #### Q29:Transformer为什么用 LayerNorm 而不是 BatchNorm？
 
 **难度**:⭐⭐
@@ -3929,7 +3951,7 @@ Transformer 选择 **Layer Normalization (LN)** 而非 **Batch Normalization (BN
 *   **原因：** 实验发现 Center（减均值）操作对效果贡献不大，去掉后计算速度更快，且效果相当甚至更好。
 
 ---
-
+<a id="q79"></a>
 #### Q30:LLM训练的时候为什么需要warmup？
 
 **难度**:⭐⭐
@@ -3974,7 +3996,7 @@ Transformer 选择 **Layer Normalization (LN)** 而非 **Batch Normalization (BN
 因此，在 LLM 训练中，Warmup 是标准的“基建”操作，通常设置为总 Step 数的 1% - 5% 或固定的步数（如 2000 steps）。
 
 ---
-
+<a id="q80"></a>
 #### Q31:对比学习中的batch size是大一些好还是小一些好？为什么？
 
 **难度**:⭐⭐
@@ -4052,7 +4074,7 @@ Transformer 选择 **Layer Normalization (LN)** 而非 **Batch Normalization (BN
 *   **对于 MoCo：** Batch Size 可以小，但 **Queue Size（负样本队列）必须大**。
 *   **对于 BYOL / SimSiam：** Batch Size 的大小影响较小，主要遵循常规深度学习的优化规律即可（如 256 或 512）。
 ---
-
+<a id="q81"></a>
 #### Q32:Tokenization 是如何工作的？BPE、WordPiece 有啥区别？
 
 **难度**:⭐⭐
