@@ -3472,7 +3472,7 @@ $$ \Delta W = \frac{\alpha}{r} (B \times A) $$
     *   如果显存依然爆了（OOM），开启 **DeepSpeed ZeRO-2 Offload**（牺牲速度换取更大模型/更长序列的可行性）。
 
 ---
-
+<a id="q71"></a>
 #### Q21:训练一个7B模型要占用多少显存？不同ZeRO阶段能节省多少显存？
 
 **难度**:⭐⭐⭐
@@ -3481,7 +3481,7 @@ $$ \Delta W = \frac{\alpha}{r} (B \times A) $$
 **公司**:字节、阿里(高频)
 
 ---
-<a id="q71"></a>
+<a id="q72"></a>
 #### Q22:DeepSpeed ZeRO Stage 1-3的区别是什么？什么时候用FSDP会更好？
 
 **难度**:⭐⭐⭐
@@ -3490,7 +3490,7 @@ $$ \Delta W = \frac{\alpha}{r} (B \times A) $$
 **公司**:字节、阿里(高频)
 
 ---
-<a id="q72"></a>
+<a id="q73"></a>
 #### Q23:vLLM框架是怎么做推理加速的？
 
 **难度**:⭐⭐⭐
@@ -3575,7 +3575,7 @@ vLLM 实现了细粒度的调度机制：
 *   **对于用户来说：** 同样的硬件，vLLM 能支持的并发量通常是 HuggingFace Transformers 的 **2-4 倍**，甚至更多。
 
 ---
-<a id="q73"></a>
+<a id="q74"></a>
 #### Q24:如果量化后模型理解能力下降怎么办？怎么做精度补偿？
 
 **难度**:⭐⭐⭐
@@ -3667,7 +3667,7 @@ vLLM 实现了细粒度的调度机制：
 3.  **混合策略：** 确保 Embedding 和 Head 层是 FP16 的。
 4.  **终极大招 (QLoRA)：** 加载 4-bit 模型，挂上 LoRA，用高质量指令数据微调 1-2 个 Epoch。**这通常能完全恢复甚至提升模型能力。**
 ---
-<a id="q74"></a>
+<a id="q75"></a>
 #### Q25:QLoRA是怎么降低资源成本的？NF4和FP16这组组合为什么有效？
 
 **难度**:⭐⭐⭐
@@ -3758,7 +3758,7 @@ NF4 是一种**基于分位数（Quantile）**的数据类型。它根据标准�
 *   **FP16/BF16 组合有效：** 靠“用时解压”保证了计算精度，配合全精度的 LoRA 参数来吸收量化噪音，实现了**“小空间换取高性能”**。
 
 ---
-<a id="q75"></a>
+<a id="q76"></a>
 #### Q26:如何估算 LLaMA-7B 模型推理时的显存占用？
 
 **难度**:⭐⭐⭐
@@ -3847,7 +3847,7 @@ $$ \text{KV Cache} = 2 \times \text{层数} \times \text{维度} \times \text{�
 3.  **长文本是大敌：** 如果你把序列长度拉到 16k 或 32k，KV Cache 会迅速吃掉 8GB-16GB 显存，此时即便模型是 INT4 的，你也可能爆显存。解决办法是开启 **GQA** (如果模型支持，如 LLaMA-3) 或 **KV Cache Quantization**。
 
 ---
-<a id="q76"></a>
+<a id="q77"></a>
 #### Q27:Prefix LM、Causal LM、Encoder-Decoder 三类架构的适用场景与优缺点？
 
 **难度**:⭐⭐
@@ -3856,7 +3856,7 @@ $$ \text{KV Cache} = 2 \times \text{层数} \times \text{维度} \times \text{�
 **公司**:美团(真题)
 
 ---
-<a id="q77"></a>
+<a id="q78"></a>
 #### Q28:bf16 和 float16 的区别？各占多少位？训练中如何选择？
 
 **难度**:⭐⭐
@@ -3950,7 +3950,7 @@ $$ \text{KV Cache} = 2 \times \text{层数} \times \text{维度} \times \text{�
 | **推荐场景** | 老显卡上的推理/微调 | **现代显卡上的预训练/微调 (LLM 标配)** |
 
 ---
-<a id="q78"></a>
+<a id="q79"></a>
 #### Q29:Transformer为什么用 LayerNorm 而不是 BatchNorm？
 
 **难度**:⭐⭐
@@ -4021,7 +4021,7 @@ Transformer 选择 **Layer Normalization (LN)** 而非 **Batch Normalization (BN
 *   **原因：** 实验发现 Center（减均值）操作对效果贡献不大，去掉后计算速度更快，且效果相当甚至更好。
 
 ---
-<a id="q79"></a>
+<a id="q80"></a>
 #### Q30:LLM训练的时候为什么需要warmup？
 
 **难度**:⭐⭐
@@ -4066,7 +4066,7 @@ Transformer 选择 **Layer Normalization (LN)** 而非 **Batch Normalization (BN
 因此，在 LLM 训练中，Warmup 是标准的“基建”操作，通常设置为总 Step 数的 1% - 5% 或固定的步数（如 2000 steps）。
 
 ---
-<a id="q80"></a>
+<a id="q81"></a>
 #### Q31:对比学习中的batch size是大一些好还是小一些好？为什么？
 
 **难度**:⭐⭐
@@ -4144,7 +4144,7 @@ Transformer 选择 **Layer Normalization (LN)** 而非 **Batch Normalization (BN
 *   **对于 MoCo：** Batch Size 可以小，但 **Queue Size（负样本队列）必须大**。
 *   **对于 BYOL / SimSiam：** Batch Size 的大小影响较小，主要遵循常规深度学习的优化规律即可（如 256 或 512）。
 ---
-<a id="q81"></a>
+<a id="q82"></a>
 #### Q32:Tokenization 是如何工作的？BPE、WordPiece 有啥区别？
 
 **难度**:⭐⭐
