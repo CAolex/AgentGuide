@@ -2682,6 +2682,60 @@ BLIP (Bootstrapping Language-Image Pre-training) 系列和 Flamingo 都是多模
 **标签**: #RLHF流程 #三阶段
 **公司**: OpenAI、字节、阿里(高频)
 
+经典的RLHF（Reinforcement Learning from Human Feedback）流程主要依据OpenAI在InstructGPT论文中提出的框架，旨在将大语言模型（LLM）与人类意图对齐。整个过程分为三个核心阶段：有监督微调（SFT）、奖励模型训练（RM）和基于强化学习的微调（PPO）。
+
+#### 阶段一：有监督微调 (Supervised Fine-Tuning, SFT)
+
+这是RLHF的冷启动阶段，目的是让模型学会“此时此刻应该是一个对话/指令跟随模式”，而非原本的续写模式。
+
+*   **输入**:
+    *   **模型**: 预训练的基座模型（Pre-trained Base Model，如GPT-3）。
+    *   **数据**: 高质量的**Prompt-Answer对**（指令-回复对）。这些数据通常由人工撰写，或者由人工筛选的高质量模型生成数据。
+*   **输出**:
+    *   **模型**: SFT模型（SFT Model），也称为策略模型（Policy Model）的初始版本。
+*   **关键目标**:
+    *   激活模型的指令遵循能力。
+    *   规范模型的输出格式，使其符合人类对话习惯。
+    *   最小化Next Token Prediction的Cross-Entropy Loss。
+
+#### 阶段二：奖励模型训练 (Reward Modeling, RM)
+
+这个阶段的目的是让机器“理解”人类的偏好，即什么是好的回答，什么是坏的回答。因为直接用人工通过RL训练模型太慢且昂贵，所以需要训练一个代理模型（RM）来模拟人类打分。
+
+*   **输入**:
+    *   **模型**: 阶段一训练好的SFT模型（用于生成回答）。
+    *   **数据**: **人类偏好排序数据**（Comparison Data）。通常的做法是：给定一个Prompt，让SFT模型生成$K$个不同的回答（$y_1, y_2, ..., y_k$），然后由人工标注员对这$K$个回答进行排序（例如 $y_A > y_B > y_C$）。
+*   **输出**:
+    *   **模型**: 奖励模型（Reward Model, RM）。通常是一个将（Prompt, Answer）映射为标量分数（Scalar Score）的回归模型。
+*   **关键目标**:
+    *   准确拟合人类的偏好排序。
+    *   通过Pairwise Ranking Loss（成对排序损失）使得好回答的得分显著高于差回答。
+
+#### 阶段三：基于PPO的强化学习 (Reinforcement Learning via PPO)
+
+这是最关键的对齐阶段，利用RM提供的信号，通过强化学习算法优化SFT模型，使其生成的回答能获得更高的奖励，同时保持语言的流畅性。
+
+*   **输入**:
+    *   **模型**: 
+        1. 阶段一的SFT模型（作为初始策略 $\pi_{SFT}$ 和 参考模型 $\pi_{ref}$）。
+        2. 阶段二的奖励模型（RM，作为环境给予Reward）。
+    *   **数据**: 大规模的**Unlabeled Prompts**（无需人工写答案，只需提供Prompt）。
+*   **输出**:
+    *   **模型**: 最终的RLHF模型（Aligned Model / RL Policy）。
+*   **关键目标**:
+    *   **最大化期望奖励**: 优化策略 $\pi_{\phi}$，使得生成的回复在RM模型下得分最高。
+    *   **约束模型偏移 (KL Divergence)**: 在目标函数中加入KL散度惩罚项（$\beta \cdot D_{KL}(\pi_{\phi} || \pi_{ref})$），防止模型为了“刷分”而产生乱码或偏离自然语言分布（即Reward Hacking问题）。
+
+---
+
+#### 💡 总结图表
+
+| 阶段 | 简称 | 核心输入数据 | 损失函数/算法 | 作用 |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. 有监督微调** | **SFT** | (Prompt, Answer) 示范数据 | Cross-Entropy (NLL) | 教会模型“怎么说话” (格式与指令遵循) |
+| **2. 奖励建模** | **RM** | (Prompt, Win vs Loss) 排序数据 | Pairwise Ranking Loss | 教会模型“什么是好话” (拟合人类偏好) |
+| **3. 强化学习** | **RL** | Only Prompts (无需标签) | PPO (Proximal Policy Optimization) | 让模型“多说好话” (对齐偏好并防止跑偏) |
+
 ---
 
 <a id="q37"></a>
