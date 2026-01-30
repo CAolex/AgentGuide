@@ -146,8 +146,7 @@
 ### 【一】Diffusion Model 核心高频考点
 
 ---
-
-### 1. 介绍一下 Diffusion Model 的原理和本质
+<h4 id="1.介绍一下 Diffusion Model 的原理和本质">4.介绍一下 Diffusion Model 的原理和本质</h4>
 
 Diffusion Model（扩散模型）是目前人工智能生成内容（AIGC）领域——特别是图像生成（如 Stable Diffusion, DALL-E 3, Midjourney）的核心技术。
 
